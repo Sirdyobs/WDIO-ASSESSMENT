@@ -1,0 +1,32 @@
+{
+  "name": "WDIO-Project",
+  "type": "commonjs",
+  "devDependencies": {
+    "@cucumber/cucumber": "^13.3.0",
+    "@types/node": "^26.6.5",
+    "@wdio/appium-service": "^10.0.2",
+    "@wdio/cli": "^10.0.2",
+    "@wdio/cucumber-framework": "^10.0.1",
+    "@wdio/globals": "^10.0.2",
+    "@wdio/local-runner": "^10.0.2",
+    "@wdio/spec-reporter": "^10.0.1",
+    "appium-uiautomator2-driver": "^8.7.0",
+    "cross-env": "^10.1.0",
+    "expect-webdriverio": "^8.0.0",
+    "tsx": "^4.23.15"
+  },
+  "scripts": {
+    "wdio": "wdio run ./wdio.conf.ts",
+    "wdio:android": "cross-env platform=Android wdio run ./wdio.conf.ts",
+    "wdio:ios": "cross-env platform=iOS wdio run ./wdio.conf.ts",
+    "wdio:api": "cucumber-js --import tsx/cjs --require features/step-definitions/api/booking.steps.ts features/WDIO-APP-FEATURES/API/booking.feature",
+    "run-all":"npm run wdio:android & npm run wdio"
+  
+  },
+  "allowScripts": {
+    "appium@3.8.0": true,
+    "edgedriver@7.0.0": true,
+    "esbuild@0.28.2": true,
+    "geckodriver@7.0.0": true
+  }
+}

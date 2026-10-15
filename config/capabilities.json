@@ -1,0 +1,18 @@
+{
+    "Android": {
+        "Samsung-AO4E": {
+            "platformName": "Android",
+            "appium:platformVersion": "13.0",
+            "appium:automationName": "UiAutomator2",
+            "appium:deviceName": "R83W80MCVLW",
+            "appium:udid": "R83W80MCVLW",
+            "appium:newCommandTimeout": 3600,
+            "appium:adbExecTimeout": 60000,
+            "appium:appPackage": "com.wdiodemoapp",
+            "appium:appActivity": "com.wdiodemoapp.MainActivity"
+        }
+    },
+    "API": {
+        "browser": "chrome"
+    }
+}
