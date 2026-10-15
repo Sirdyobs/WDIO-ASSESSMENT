@@ -10,3 +10,6 @@ When you ready, execute "npm run run-all" to execute Both Android and API tests,
 For Android, execute "NPM run wdio:Andriod"
 For IOS, execute "NPM run wdio:IOS"
 for API, Execute "NPM run wdio:api"
+
+
+The Bonus  scenarios: Is the signup negative testing.
